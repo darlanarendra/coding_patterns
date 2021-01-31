@@ -11,20 +11,19 @@ public class KnapsackExample {
 	}
 	
 	public int solveKnapsack(int [] weights, int [] credits, int capacity) {
-		return knapsackRecursive(weights, credits, capacity,0);
-		
+		return knapsackRecursive(weights, credits, capacity,0);	
 	}
 	
 	private int knapsackRecursive(int[] weights, int [] credits, int capacity, int index) {
 		if(capacity <= 0 || index>= credits.length) return 0;
-		
 		int credits1 = 0;
 		if(weights[index]<=capacity) {
 			credits1 = credits[index]+knapsackRecursive(weights, credits, capacity-weights[index], index+1);
 		}
-		
 		int credits2 = knapsackRecursive(weights, credits, capacity, index+1);
-		
 		return Math.max(credits1,credits2);
 	}
+	
+	
+	//Time Complextity os 2(n)
 }
