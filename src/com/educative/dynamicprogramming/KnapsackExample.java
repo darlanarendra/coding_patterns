@@ -1,4 +1,4 @@
-package com.educative.dynamic;
+package com.educative.dynamicprogramming;
 
 public class KnapsackExample {
 

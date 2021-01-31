@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.educative.dynamic;
+package com.educative.dynamicprogramming;
 
 /**
  * @author narendradarla
