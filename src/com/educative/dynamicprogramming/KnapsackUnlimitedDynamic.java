@@ -9,7 +9,6 @@ public class KnapsackUnlimitedDynamic {
 		int[] profits = { 15, 50, 60, 90 };
 	    int[] weights = { 1, 3, 4, 5 };
 		int capacity = 8;
-		
 		System.out.println("KnapsackUnlimited -> "+solveKnapsack(weights,profits,capacity));
 	}
 
@@ -22,7 +21,7 @@ public class KnapsackUnlimitedDynamic {
 
 	private static int solveKnapsackDynamic(int[] weights, int[] profits, 
 			int capacity, int index, Integer[][] dp) {
-		
+	
 		if(capacity<= 0 || profits.length == 0|| profits.length != weights.length || index>= profits.length)
 			return 0;
 		
