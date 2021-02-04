@@ -1,4 +1,4 @@
-package com.educative.dynamicprogramming;
+package com.leetcode.revision;
 
 import java.util.LinkedList;
 import java.util.Queue;

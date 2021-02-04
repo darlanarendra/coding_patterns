@@ -1,4 +1,4 @@
-package com.educative.dynamicprogramming;
+package com.leetcode.revision;
 
 import java.util.Stack;
 
@@ -9,7 +9,8 @@ public class MyQueue {
 	
 
 	public void push(int x) {
-		
+		constructInputStack();
+		inputStack.push(x);
 	}
 	
 	public int pop(){
@@ -40,5 +41,4 @@ public class MyQueue {
 		}
 	}
 	
-	//1,2,3
 }

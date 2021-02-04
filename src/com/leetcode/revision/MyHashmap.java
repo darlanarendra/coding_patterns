@@ -1,4 +1,4 @@
-package com.educative.dynamicprogramming;
+package com.leetcode.revision;
 
 public class MyHashmap {
 	
